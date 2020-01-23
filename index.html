@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid w-100 h-100 p-0 m-0">
+        <header class="p-0 m-0">
+            <ul class="nav nav-pills nav-justified bg-light p-0 m-0">
+                <li class="nav-item">
+                    <a class="nav-link " ui-sref="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " ui-sref="serive">Serive</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " ui-sref="singup">Singup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="singin">Singin</a>
+                </li>
+            </ul>
+
+        </header>
+        <section class="text2 bg-info w-100 h-100 p-0 m-0">
+            <ui-view></ui-view>
+        </section>
+
+    </div>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/home.Ctrl.js"></script>
+    <script src="js/service.Ctrl.js"></script>
+    <script src="js/singup.Ctrl.js"></script>
+    <script src="js/singin.Ctrl.js"></script>
+</body>
+
+</html>
